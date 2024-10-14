@@ -1,0 +1,168 @@
+
+.header {
+    background-image: url('https://american-coatings-show.com/wp-content/uploads/2020/05/ACVirtual_header2-for-website.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    color: white; 
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: blueviolet;
+}
+
+body {
+    background: linear-gradient(to bottom, #6fb4dc, #5e2471); ;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.content {
+    background-color: rgb(164, 190, 224);
+    text-align: center;
+    padding: 20px;
+    color: #050107;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.content img {
+    width: 170px;
+    height: 170px;
+}
+.Cnt {
+    
+    padding: 20px;
+    margin: 20px; 
+    border-radius: 5px; 
+}
+
+.Cnt h2 {
+    text-align: center; 
+    color: #ffffff; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+label {
+    font-weight: bold; 
+    color: #fff9f9;
+}
+
+
+textarea {
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button {
+    padding: 10px;
+    background-color: #5e1257; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #af0303; 
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #f3f3f3;
+    padding: 32px;
+    
+}
+
+.logo {
+    max-width: 100px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.service {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin-top: 15px;
+    color: #5e2471;
+}
+
+.service p {
+    color: #333;
+}
+
+.Srv h2 {
+    color: white;
+    text-align: center;
+}
+
+
