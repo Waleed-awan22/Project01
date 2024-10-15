@@ -1,168 +1,228 @@
-
+body {
+    background: linear-gradient(to bottom, #6fb4dc, #5e2471);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
 .header {
     background-image: url('https://american-coatings-show.com/wp-content/uploads/2020/05/ACVirtual_header2-for-website.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 150px;
     text-align: center;
     padding: 20px;
-    color: white; 
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .nav li {
     margin: 0 15px;
+    padding: 5px 0;
 }
 
 .nav a {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .nav a:hover {
     color: blueviolet;
 }
 
-body {
-    background: linear-gradient(to bottom, #6fb4dc, #5e2471); ;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
 .content {
-    background-color: rgb(164, 190, 224);
     text-align: center;
     padding: 20px;
-    color: #050107;
-    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
-.content h1 {
-    margin-bottom: 20px;
-}
-
-
-.content {
+.motive-strength-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-}
-
-.content img {
-    width: 170px;
-    height: 170px;
-}
-.Cnt {
-    
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    margin: 20px; 
-    border-radius: 5px; 
 }
 
-.Cnt h2 {
-    text-align: center; 
-    color: #ffffff; 
-}
-
-form {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px; 
-}
-
-label {
-    font-weight: bold; 
-    color: #fff9f9;
-}
-
-
-textarea {
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    width: 100%; 
-    box-sizing: border-box; 
-}
-
-button {
-    padding: 10px;
-    background-color: #5e1257; 
-    color: white;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-
-button:hover {
-    background-color: #af0303; 
-}
-
-footer {
-    background-color: #000000;
+.motive, .strength {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(21, 105, 147, 0.996);
+    max-width: 500px;
     text-align: center;
-    color: #f3f3f3;
-    padding: 32px;
-    
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.logo {
-    max-width: 100px; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto 20px;
+.motive img, .strength img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.motive h3, .strength h3 {
+    margin-bottom: 10px;
+    color: #fcfcfc;
+    font-size: 18px;
+}
+
+.motive p, .strength p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.motive:hover, .strength:hover {
+    background-color: #5e2471;
+    transform: scale(1.05);
+}
+
+.Srv {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    color: #fcfcfc;
 }
 
 .service-container {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .service {
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(96, 9, 100);
+    max-width: 300px;
     text-align: center;
-    width: 300px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .service img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .service h3 {
-    margin-top: 15px;
-    color: #5e2471;
+    margin-bottom: 10px;
+    color: #fcfcfc;
+    font-size: 18px;
 }
 
 .service p {
-    color: #333;
+    font-size: 14px;
+    color: #ffffff;
 }
 
-.Srv h2 {
-    color: white;
+.service:hover {
+    background-color: #5e2471;
+    transform: scale(1.05);
+}
+
+.Cnt {
+    padding: 20px;
     text-align: center;
+    color: #fcfcfc;
 }
 
+.Cnt {
+    background-color: #450a53
+}
 
+form {
+    display: inline-block;  
+    text-align: left;       
+    margin: auto;          
+    max-width: 500px;
+    width: 100%;           
+}
+
+label {
+    display: block;             
+    margin-bottom: 5px;
+    color: #ffffff;             
+}
+
+input, textarea {
+    width: calc(100% - 20px);  
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+
+input::placeholder, textarea::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+button {
+    background-color: #b00808;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+button:hover {
+    background-color: #00b02f;
+}
+
+footer {
+    background-color: #55165b;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    
+}
+
+@media (max-width: 768px) {
+    .motive-strength-wrapper {
+        flex-direction: column;
+    }
+
+    .motive, .strength {
+        max-width: 100%;
+    }
+
+    .service-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .service {
+        max-width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
